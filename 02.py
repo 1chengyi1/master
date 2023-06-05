@@ -19,4 +19,4 @@ if uploaded_file is not None:
     img=PILImage.create(uploaded_file)
     st.image(img.to_thumb(500,500),caption='Your Image')
     pred,pred_idx,probs =learn_inf.predict(img)
-    st.write(f'Prediction:{pred};Probability:{probs[pred_idx]:.04f}')
+    st.write(f"Prediction:{pred};Probability:{probs[pred_idx]:.04f}")
